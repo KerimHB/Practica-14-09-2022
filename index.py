@@ -45,7 +45,6 @@ def login():
 def perfil():
     if g.usuario==None:
         return redirect(url_for('login'))
-        session.clear('usuario_id', None)
     return render_template('perfil.html')
 
 if __name__=='__main__':
